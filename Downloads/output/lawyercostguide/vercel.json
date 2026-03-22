@@ -1,0 +1,53 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/practice-areas",
+      "destination": "/practice-areas.html"
+    },
+    {
+      "source": "/cities",
+      "destination": "/cities.html"
+    },
+    {
+      "source": "/methodology",
+      "destination": "/methodology.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/insights",
+      "destination": "/insights.html"
+    },
+    {
+      "source": "/insights/:slug",
+      "destination": "/insights/:slug.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
