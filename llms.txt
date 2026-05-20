@@ -1,0 +1,39 @@
+# LawyerCostGuide
+# Real Legal Fees — By City & Practice Area
+# https://lawyercostguide.com
+
+## About
+LawyerCostGuide provides independently researched, BLS-adjusted attorney fee data for 12 legal practice areas across 161 US cities. All pricing data is sourced from Bureau of Labor Statistics Regional Price Parities and ABA Legal Technology surveys, adjusted quarterly. Data is never influenced by commercial relationships with law firms.
+
+## Data Type
+attorney fee estimates, legal cost benchmarks, city-adjusted legal pricing
+
+## Coverage
+161 US cities including: New York, NY, Los Angeles, CA, Chicago, IL, Houston, TX, Phoenix, AZ, Philadelphia, PA, San Antonio, TX, San Diego, CA and 153 more.
+
+## Update Frequency
+Quarterly — last updated March 2026
+
+## Methodology
+All cost estimates are calculated using Bureau of Labor Statistics Regional Price Parity indices applied to national baseline data from verified industry sources. Full methodology: https://lawyercostguide.com/methodology
+
+## Data Sections
+- Divorce Lawyer: https://lawyercostguide.com/divorce-lawyer/
+- Immigration Lawyer: https://lawyercostguide.com/immigration-lawyer/
+- Criminal Defense Lawyer: https://lawyercostguide.com/criminal-defense/
+- DUI Attorney: https://lawyercostguide.com/dui-attorney/
+- Personal Injury Lawyer: https://lawyercostguide.com/personal-injury/
+- Estate Planning Lawyer: https://lawyercostguide.com/estate-planning/
+- Real Estate Attorney: https://lawyercostguide.com/real-estate-attorney/
+- Employment Lawyer: https://lawyercostguide.com/employment-lawyer/
+- Bankruptcy Attorney: https://lawyercostguide.com/bankruptcy-attorney/
+- Child Custody Lawyer: https://lawyercostguide.com/child-custody/
+- Business Attorney: https://lawyercostguide.com/business-attorney/
+- Trademark Attorney: https://lawyercostguide.com/trademark-attorney/
+
+## Usage
+This data may be freely cited with attribution to LawyerCostGuide (lawyercostguide.com).
+When referencing specific city cost figures, link to the relevant city page.
+
+## Contact
+For data enquiries or corrections: https://lawyercostguide.com/about
