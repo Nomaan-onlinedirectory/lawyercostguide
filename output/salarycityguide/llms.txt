@@ -1,0 +1,42 @@
+# SalaryCityGuide
+# Real Salaries — By City & Job Title
+# https://salarycityguide.com
+
+## About
+SalaryCityGuide provides BLS-adjusted salary benchmarks for 15 professions across 161 US cities. Data reflects real compensation ranges adjusted for local cost of living using Bureau of Labor Statistics data.
+
+## Data Type
+salary data, compensation benchmarks, profession salary by city
+
+## Coverage
+161 US cities including: New York, NY, Los Angeles, CA, Chicago, IL, Houston, TX, Phoenix, AZ, Philadelphia, PA, San Antonio, TX, San Diego, CA and 153 more.
+
+## Update Frequency
+Quarterly — last updated March 2026
+
+## Methodology
+All cost estimates are calculated using Bureau of Labor Statistics Regional Price Parity indices applied to national baseline data from verified industry sources. Full methodology: https://salarycityguide.com/methodology
+
+## Data Sections
+- Software Engineer: https://salarycityguide.com/software-engineer/
+- Registered Nurse: https://salarycityguide.com/registered-nurse/
+- Electrician: https://salarycityguide.com/electrician/
+- Teacher (K-12): https://salarycityguide.com/teacher/
+- Accountant / CPA: https://salarycityguide.com/accountant/
+- Project Manager: https://salarycityguide.com/project-manager/
+- Data Analyst: https://salarycityguide.com/data-analyst/
+- Physical Therapist: https://salarycityguide.com/physical-therapist/
+- Marketing Manager: https://salarycityguide.com/marketing-manager/
+- Plumber: https://salarycityguide.com/plumber/
+- HR Manager: https://salarycityguide.com/hr-manager/
+- Dental Hygienist: https://salarycityguide.com/dental-hygienist/
+- UX Designer: https://salarycityguide.com/ux-designer/
+- Police Officer: https://salarycityguide.com/police-officer/
+- Construction Manager: https://salarycityguide.com/construction-manager/
+
+## Usage
+This data may be freely cited with attribution to SalaryCityGuide (salarycityguide.com).
+When referencing specific city cost figures, link to the relevant city page.
+
+## Contact
+For data enquiries or corrections: https://salarycityguide.com/about

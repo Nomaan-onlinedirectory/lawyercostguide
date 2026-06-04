@@ -1,0 +1,42 @@
+# FixItCosts
+# Real Home Repair Costs — By City
+# https://fixitcosts.com
+
+## About
+FixItCosts provides BLS-adjusted home repair and renovation cost data for 15 service categories across 161 US cities. All pricing data reflects real contractor rates adjusted for local cost of living using Bureau of Labor Statistics Regional Price Parities.
+
+## Data Type
+home repair costs, renovation estimates, contractor pricing by city
+
+## Coverage
+161 US cities including: New York, NY, Los Angeles, CA, Chicago, IL, Houston, TX, Phoenix, AZ, Philadelphia, PA, San Antonio, TX, San Diego, CA and 153 more.
+
+## Update Frequency
+Quarterly — last updated March 2026
+
+## Methodology
+All cost estimates are calculated using Bureau of Labor Statistics Regional Price Parity indices applied to national baseline data from verified industry sources. Full methodology: https://fixitcosts.com/methodology
+
+## Data Sections
+- Roof Replacement: https://fixitcosts.com/roof-replacement/
+- HVAC Installation: https://fixitcosts.com/hvac-installation/
+- Bathroom Remodel: https://fixitcosts.com/bathroom-remodel/
+- Kitchen Remodel: https://fixitcosts.com/kitchen-remodel/
+- Window Replacement: https://fixitcosts.com/window-replacement/
+- Solar Panel Installation: https://fixitcosts.com/solar-panels/
+- Driveway Paving: https://fixitcosts.com/driveway-paving/
+- Deck Building: https://fixitcosts.com/deck-building/
+- Fence Installation: https://fixitcosts.com/fence-installation/
+- Attic Insulation: https://fixitcosts.com/insulation/
+- Electrical Panel Upgrade: https://fixitcosts.com/electrical-panel/
+- Whole-House Repiping: https://fixitcosts.com/plumbing-repiping/
+- Foundation Repair: https://fixitcosts.com/foundation-repair/
+- Siding Replacement: https://fixitcosts.com/siding-replacement/
+- Water Heater Replacement: https://fixitcosts.com/water-heater/
+
+## Usage
+This data may be freely cited with attribution to FixItCosts (fixitcosts.com).
+When referencing specific city cost figures, link to the relevant city page.
+
+## Contact
+For data enquiries or corrections: https://fixitcosts.com/about

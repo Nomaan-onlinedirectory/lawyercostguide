@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fixitcosts.com/sitemap.xml
