@@ -5139,10 +5139,33 @@ def build_price_trio(svc_slug, lo, avg, hi, a, fmt_fn):
     avg_fmt = fmt_fn(avg)
     hi_fmt  = fmt_fn(hi)
 
+    lo_icon = '<div class="ptc-icon">💼</div>'
+    avg_icon = '<div class="ptc-icon">👥</div>'
+    hi_icon = '<div class="ptc-icon">💎</div>'
+    if svc_slug == "personal-injury":
+        lo_icon = '<div class="ptc-icon">📋</div>'
+        avg_icon = '<div class="ptc-icon">⚖️</div>'
+        hi_icon = '<div class="ptc-icon">🏥</div>'
+    elif svc_slug == "immigration-lawyer":
+        lo_icon = '<div class="ptc-icon">📄</div>'
+        avg_icon = '<div class="ptc-icon">🌐</div>'
+        hi_icon = '<div class="ptc-icon">🏛️</div>'
+    elif svc_slug == "criminal-defense":
+        lo_icon = '<div class="ptc-icon">📋</div>'
+        avg_icon = '<div class="ptc-icon">⚖️</div>'
+        hi_icon = '<div class="ptc-icon">🛡️</div>'
+    elif svc_slug == "divorce-lawyer":
+        lo_icon = '<div class="ptc-icon">📝</div>'
+        avg_icon = '<div class="ptc-icon">👥</div>'
+        hi_icon = '<div class="ptc-icon">🏠</div>'
+    elif svc_slug == "dui-attorney":
+        lo_icon = '<div class="ptc-icon">📋</div>'
+        avg_icon = '<div class="ptc-icon">⚖️</div>'
+        hi_icon = '<div class="ptc-icon">🔑</div>'
     return f"""<div class="price-trio">
-    <div class="ptc"><div><div class="ptc-label">{lo_label}</div><div class="ptc-val" data-val="{lo}">{lo_fmt}</div><div class="ptc-sub">{lo_sub}</div></div></div>
-    <div class="ptc ptc-avg"><div><div class="ptc-label">{avg_label}</div><div class="ptc-val" data-val="{avg}">{avg_fmt}</div><div class="ptc-sub">{avg_sub}</div>{zero_pill}</div><span class="ptc-badge">{badge}</span></div>
-    <div class="ptc"><div><div class="ptc-label">{hi_label}</div><div class="ptc-val" data-val="{hi}">{hi_fmt}</div><div class="ptc-sub">{hi_sub}</div></div></div>
+    <div class="ptc"><div>{lo_icon}<div class="ptc-label">{lo_label}</div><div class="ptc-val" data-val="{lo}">{lo_fmt}</div><div class="ptc-sub">{lo_sub}</div></div></div>
+    <div class="ptc ptc-avg"><div>{avg_icon}<div class="ptc-label">{avg_label}</div><div class="ptc-val" data-val="{avg}">{avg_fmt}</div><div class="ptc-sub">{avg_sub}</div>{zero_pill}</div><span class="ptc-badge">{badge}</span></div>
+    <div class="ptc"><div>{hi_icon}<div class="ptc-label">{hi_label}</div><div class="ptc-val" data-val="{hi}">{hi_fmt}</div><div class="ptc-sub">{hi_sub}</div></div></div>
   </div>"""
 
 
