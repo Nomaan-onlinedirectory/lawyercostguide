@@ -108,14 +108,14 @@ SITES = {
         "desc": "Find real attorney fees for your city and legal matter. BLS-adjusted, verified firms, updated quarterly.",
         "accent": "#7c3aed",
         "accent2": "#d4a853",
-        "bg": "#0f0826",
-        "ink": "#0f0826",
-        "ink2": "#1a1035",
-        "parch": "#1a1035",
-        "bdr": "#2d1f45",
-        "warm": "#2d1f45",
-        "mid": "#d4a853",
-        "muted": "#8b7fa8",
+        "bg": "#f4f2fa",
+        "ink": "#1a1035",
+        "ink2": "#2d1f45",
+        "parch": "#ede9f8",
+        "bdr": "#d8cfee",
+        "warm": "#ede9f8",
+        "mid": "#4a3570",
+        "muted": "#7c6b9e",
         "category": "legal",
         "category_label": "Legal Fees",
         "unit": "$",
@@ -949,7 +949,7 @@ def shared_css(s):
     a2r = hex_to_rgb(a2)
     return f"""*,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
 html{{overflow-x:hidden;scroll-behavior:smooth;color-scheme:light;background:{bg};--accent-rgb:{ar};--accent2-rgb:{a2r}}}
-body{{font-family:'Libre Franklin',sans-serif;background:linear-gradient(160deg,{bg} 0%,#0d0620 60%,{parch} 100%);background-attachment:fixed;color:{ink};line-height:1.65;font-size:16px;overflow-x:hidden;width:100%;-webkit-text-size-adjust:100%}}
+body{{font-family:'Libre Franklin',sans-serif;background:linear-gradient(160deg,{bg} 0%,{bg} 55%,{parch} 100%);background-attachment:fixed;color:{ink};line-height:1.65;font-size:16px;overflow-x:hidden;width:100%;-webkit-text-size-adjust:100%}}
 a{{text-decoration:none;color:{a}}}
 nav{{background:{ink};height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;position:sticky;top:0;z-index:100;width:100%}}
 .logo{{font-family:'Playfair Display',serif;font-weight:900;font-size:1.3rem;color:{bg};text-decoration:none;letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:center;gap:.45rem}}
@@ -1031,7 +1031,7 @@ nav{{background:{ink};height:56px;display:flex;align-items:center;justify-conten
   .hero-stat-chips{{gap:.55rem;margin:1rem 0 1.4rem}}
   .hero-chip{{font-size:.72rem;padding:.35rem .85rem}}
 }}
-.price-trio{{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.35);border-radius:12px;overflow:hidden;width:100%;box-shadow:0 0 20px rgba(255,255,255,.08)}}
+.price-trio{{display:flex;flex-direction:column;gap:1px;background:#1d1440;border:1px solid #2d1f45;border-radius:12px;overflow:hidden;width:100%;box-shadow:0 0 20px rgba(255,255,255,.08)}}
 .ptc{{padding:.9rem 1.1rem;display:flex;align-items:center;justify-content:space-between;flex:1}}
 .ptc+.ptc{{border-top:1px solid rgba(255,255,255,.07)}}
 .ptc-avg{{background:rgba(255,255,255,.08)}}
@@ -1041,7 +1041,7 @@ nav{{background:{ink};height:56px;display:flex;align-items:center;justify-conten
 .ptc-sub{{font-size:.66rem;color:rgba(255,255,255,.3);margin-top:.1rem}}
 .ptc-badge{{background:{a};color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:.18rem .5rem;border-radius:5px;flex-shrink:0}}
 .ad-label{{font-size:.6rem;color:{muted};text-align:center;margin-bottom:.2rem;letter-spacing:.08em;text-transform:uppercase}}
-.ad-box{{background:#1a1035;border:1px solid {bdr};border-radius:8px;display:flex;align-items:center;justify-content:center;color:{muted};font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}}
+.ad-box{{background:#fff;border:1px solid {bdr};border-radius:8px;display:flex;align-items:center;justify-content:center;color:{muted};font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}}
 .ad-wrap{{display:none;overflow:hidden;margin-bottom:0;transition:none;border-radius:12px;padding:0;min-height:0}}
 .ad-wrap .ad-label{{display:none}}
 .ad-wrap.ad-loaded{{display:block;background:{parch};border:1px solid {bdr};padding:.75rem;margin-bottom:1.5rem}}
@@ -1058,10 +1058,10 @@ aside{{display:none}}
 .section-header{{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:1.5rem;padding:.75rem 1.25rem .65rem;border-bottom:2px solid rgba(255,255,255,.12);gap:.75rem;background:{ink};width:calc(100% + 2.5rem);position:relative;left:-1.25rem;border-left:4px solid {a}}}.sh-cta{{background:{a}!important;border-bottom:2px solid rgba(255,255,255,.25)!important;border-left:4px solid rgba(255,255,255,.4)!important}}.sh-cta h2{{font-size:1.35rem!important}}
 .section-header h2{{font-family:'Playfair Display',serif;font-weight:800;font-size:1.2rem;color:#fff;letter-spacing:-.01em;flex:1}}
 .section-header a{{font-size:.76rem;font-weight:600;color:{a2};text-decoration:none;flex-shrink:0}}
-.block{{background:#1a1035;color:#e8e3f0;border:1px solid {bdr};border-radius:12px;overflow:hidden;margin-bottom:2.5rem;box-shadow:0 2px 16px rgba(0,0,0,.05);position:relative}}
+.block{{background:#fff;color:{ink};border:1px solid {bdr};border-radius:12px;overflow:hidden;margin-bottom:2.5rem;box-shadow:0 2px 16px rgba(0,0,0,.05);position:relative}}
 .block-head{{padding:.8rem 1.1rem;border-bottom:1px solid {bdr};background:{parch};font-family:'Playfair Display',serif;font-weight:800;font-size:.92rem;color:{ink}}}
 .block-body{{padding:1.65rem}}
-.city-intro{{background:#1a1035;color:#e8e3f0;border:1px solid {bdr};border-radius:12px;padding:1.5rem;margin-bottom:2.1rem}}
+.city-intro{{background:#fff;color:{ink};border:1px solid {bdr};border-radius:12px;padding:1.5rem;margin-bottom:2.1rem}}
 .ci-head{{font-family:'Playfair Display',serif;font-weight:800;font-size:1rem;color:{ink};margin-bottom:.65rem}}
 .ci-body{{font-size:.87rem;color:{mid};line-height:1.85}}
 .ci-body p{{margin-bottom:.65rem}}.ci-body p:last-child{{margin-bottom:0}}
@@ -1078,7 +1078,7 @@ aside{{display:none}}
 .nat-note{{background:{parch};border-left:3px solid {a};border-radius:0 6px 6px 0;padding:.75rem .9rem;font-size:.79rem;color:{mid};line-height:1.7;margin-top:.85rem}}
 .calc-label{{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:{mid};margin-bottom:.4rem}}
 .btn-group{{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}}
-.cb{{border:2px solid {bdr};background:#1a1035;color:{mid};padding:.38rem .8rem;border-radius:7px;font-size:.76rem;font-weight:600;cursor:pointer;transition:all .15s;font-family:'Libre Franklin',sans-serif}}
+.cb{{border:2px solid {bdr};background:#fff;color:{mid};padding:.38rem .8rem;border-radius:7px;font-size:.76rem;font-weight:600;cursor:pointer;transition:all .15s;font-family:'Libre Franklin',sans-serif}}
 .cb:hover{{border-color:{a};color:{a}}}
 .cb.on{{background:{a};border-color:{a};color:#fff}}
 .calc-result{{background:{ink};border-radius:12px;padding:1.25rem;text-align:center;margin-bottom:.75rem}}
@@ -1092,7 +1092,7 @@ aside{{display:none}}
 .factor:last-child{{border-bottom:none}}
 .factor strong{{color:{ink};display:block;margin-bottom:.2rem;font-weight:700}}
 .bento-grid{{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:0}}
-.bento-card{{background:#1a1035;color:#e8e3f0;border:1px solid {bdr};border-radius:14px;padding:1.1rem 1rem;font-size:.84rem;color:{mid};line-height:1.75;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:0 2px 12px rgba(0,0,0,.04)}}
+.bento-card{{background:#fff;color:{mid};border:1px solid {bdr};border-radius:14px;padding:1.1rem 1rem;font-size:.84rem;color:{mid};line-height:1.75;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:0 2px 12px rgba(0,0,0,.04)}}
 .bento-card:hover{{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.12);border-color:{a}}}
 .bento-card.bento-hero{{grid-column:1 / -1;background:{parch};border-color:{a};padding:1.3rem 1.15rem;box-shadow:0 4px 20px rgba(0,0,0,.07)}}
 .bento-card strong{{color:{ink};display:block;font-size:.88rem;font-weight:700;margin-bottom:.45rem;line-height:1.3}}
@@ -1119,7 +1119,7 @@ aside{{display:none}}
 .faq-list{{display:flex;flex-direction:column;gap:.5rem}}
 details.fq{{border:1px solid {bdr};border-radius:10px;overflow:hidden}}
 details.fq[open]{{border-color:{a}}}
-summary.fqq{{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1rem;cursor:pointer;list-style:none;font-weight:600;font-size:.87rem;color:{ink};gap:.75rem;background:#1a1035;color:#e8e3f0}}
+summary.fqq{{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1rem;cursor:pointer;list-style:none;font-weight:600;font-size:.87rem;color:{ink};gap:.75rem;background:#fff;color:{ink}}}
 details.fq[open] summary.fqq{{background:{parch}}}
 summary.fqq::-webkit-details-marker{{display:none}}
 summary.fqq::after{{content:'+';font-size:1.2rem;color:{a};flex-shrink:0;font-weight:300}}
@@ -1230,7 +1230,7 @@ details[open] summary.fqq::after{{transform:rotate(45deg);display:inline-block}}
 .cmb-label{{font-weight:700;color:{ink};font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}}
 .cmb-list a{{color:{a};text-decoration:underline}}
 .cmb-footer{{background:{parch};padding:.5rem 1.1rem;font-size:.68rem;color:{muted};border-top:1px solid {bdr}}}
-.glance-card{{background:#1a1035;color:#e8e3f0;border:1px solid {bdr};border-radius:14px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.05)}}
+.glance-card{{background:#fff;color:{ink};border:1px solid {bdr};border-radius:14px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.05)}}
 .glance-head{{background:linear-gradient(135deg,{ink} 0%,{ink2} 100%);color:#fff;padding:.75rem 1.1rem;font-family:'Playfair Display',serif;font-weight:800;font-size:.92rem;display:flex;align-items:center;justify-content:space-between}}
 .glance-cols{{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}}
 .glance-col{{padding:.8rem .9rem;border-right:1px solid {bdr};display:flex;flex-direction:column;gap:.25rem}}
@@ -1384,7 +1384,7 @@ details[open] summary.fqq::after{{transform:rotate(45deg);display:inline-block}}
 .tog-btn.tog-open .tog-btn-title{{color:{a}}}
 .tog-chevron{{font-size:.75rem;color:{a};transition:transform .25s;flex-shrink:0;margin-top:.15rem;font-weight:700}}
 .tog-btn.tog-open .tog-chevron{{transform:rotate(180deg)}}
-.tog-body{{background:#1a1035;color:#e8e3f0;border:1px solid {a};border-top:none;border-radius:0 0 10px 10px;overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1)}}
+.tog-body{{background:#fff;color:{ink};border:1px solid {a};border-top:none;border-radius:0 0 10px 10px;overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1)}}
 .tog-body.tog-open{{max-height:2000px}}
 .tog-inner{{padding:1.5rem}}
 @media(min-width:600px){{
