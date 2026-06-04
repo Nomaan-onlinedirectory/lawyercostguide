@@ -953,7 +953,7 @@ body{{font-family:'Libre Franklin',sans-serif;background:linear-gradient(160deg,
 a{{text-decoration:none;color:{a}}}
 nav{{background:{ink};height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;position:sticky;top:0;z-index:100;width:100%}}
 .logo{{font-family:'Playfair Display',serif;font-weight:900;font-size:1.3rem;color:{bg};text-decoration:none;letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:center;gap:.45rem}}
-.logo em{{font-style:italic;color:{a2}}}
+.logo em{{font-style:italic;color:rgba(255,255,255,.85)}}
 .nav-r{{display:none}}
 .nav-burger{{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem;background:none;border:none;flex-shrink:0}}
 .nav-burger span{{display:block;width:22px;height:2px;background:rgba(255,255,255,.6);border-radius:2px;transition:all .2s}}
@@ -1019,7 +1019,7 @@ nav{{background:{ink};height:56px;display:flex;align-items:center;justify-conten
 .hero h1{{font-family:'Playfair Display',serif;font-weight:900;font-size:2.1rem;color:{bg};line-height:1.1;letter-spacing:-.02em;margin-bottom:.5rem;position:relative}}
 .hero-sub{{font-size:.78rem;color:rgba(255,255,255,.55);margin-bottom:1.1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;position:relative}}
 .hero-sub .hs-sep{{color:rgba(255,255,255,.2)}}
-.hero h1 em{{font-style:italic;color:{a2}}}
+.hero h1 em{{font-style:italic;color:rgba(255,255,255,.85)}}
 .hero-meta{{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:1.4rem;position:relative}}
 .hm-item{{font-size:.72rem;color:rgba(255,255,255,.4);font-weight:500}}
 .hero-stat-chips{{display:flex;flex-wrap:wrap;gap:.45rem;margin:.85rem 0 1.2rem;position:relative}}
@@ -1416,7 +1416,7 @@ footer a:hover{{color:{a2}}}
 
   /* ── Price trio — elevated on desktop ── */
   .price-trio{{flex-direction:row;border-radius:16px;border:2px solid rgba(255,255,255,.4);box-shadow:0 0 40px rgba(167,139,250,.15),0 8px 32px rgba(0,0,0,.25)}}
-  .ptc{{flex:1;flex-direction:column;align-items:center;text-align:center;justify-content:center;padding:1.5rem 1.25rem;display:flex}}.ptc-icon{{width:42px;height:42px;border-radius:50%;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.35);display:flex;align-items:center;justify-content:center;margin:0 auto .6rem;font-size:19px}}.ptc-avg .ptc-icon{{background:rgba(212,168,83,.15);border-color:rgba(212,168,83,.4)}}.price-trio{{border:1px solid #2d1f45;border-radius:12px;overflow:hidden}}.ptc-avg{{border-left:1px solid #d4a853;border-right:1px solid #d4a853;background:rgba(212,168,83,.05)}}
+  .ptc{{flex:1;flex-direction:column;align-items:center;text-align:center;justify-content:center;padding:1.5rem 1.25rem;display:flex}}.ptc-icon{{width:42px;height:42px;border-radius:50%;background:rgba({ar},.2);border:1px solid rgba({ar},.35);display:flex;align-items:center;justify-content:center;margin:0 auto .6rem;font-size:19px}}.ptc-avg .ptc-icon{{background:rgba({a2r},.15);border-color:rgba({a2r},.4)}}.price-trio{{border:1px solid #2d1f45;border-radius:12px;overflow:hidden}}.ptc-avg{{border-left:1px solid #d4a853;border-right:1px solid #d4a853;background:rgba(212,168,83,.05)}}
   .ptc+.ptc{{border-top:none;border-left:1px solid rgba(255,255,255,.1)}}
   .ptc-val{{font-size:2rem}}
   .ptc-avg .ptc-val{{font-size:2.4rem}}
@@ -5139,9 +5139,9 @@ def build_price_trio(svc_slug, lo, avg, hi, a, fmt_fn):
     avg_fmt = fmt_fn(avg)
     hi_fmt  = fmt_fn(hi)
 
-    lo_icon = '<div class="ptc-icon">💼</div>'
-    avg_icon = '<div class="ptc-icon">👥</div>'
-    hi_icon = '<div class="ptc-icon">💎</div>'
+    lo_icon = f'<div class="ptc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="{a}"><path d="M20 6h-2.18c.07-.44.18-.88.18-1a3 3 0 00-6 0c0 .12.11.56.18 1H10V4H6v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-8-1a1 1 0 011 1c0 .12-.11.56-.18 1h-1.64C11.11 6.56 11 6.12 11 6a1 1 0 011-1zm0 10l-4-2.22V9.31l4 2.22 4-2.22V12.8L12 15z"/></svg></div>'
+    avg_icon = f'<div class="ptc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="{a}"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>'
+    hi_icon = f'<div class="ptc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="{a}"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>'
     if svc_slug == "personal-injury":
         lo_icon = '<div class="ptc-icon">📋</div>'
         avg_icon = '<div class="ptc-icon">⚖️</div>'

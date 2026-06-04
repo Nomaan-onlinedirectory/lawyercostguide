@@ -42,7 +42,7 @@ body{font-family:'Libre Franklin',sans-serif;background:linear-gradient(160deg,#
 a{text-decoration:none;color:#7c3aed}
 nav{background:#0f0826;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;position:sticky;top:0;z-index:100;width:100%}
 .logo{font-family:'Playfair Display',serif;font-weight:900;font-size:1.3rem;color:#0f0826;text-decoration:none;letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:center;gap:.45rem}
-.logo em{font-style:italic;color:#d4a853}
+.logo em{font-style:italic;color:rgba(255,255,255,.85)}
 .nav-r{display:none}
 .nav-burger{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem;background:none;border:none;flex-shrink:0}
 .nav-burger span{display:block;width:22px;height:2px;background:rgba(255,255,255,.6);border-radius:2px;transition:all .2s}
@@ -108,7 +108,7 @@ nav{background:#0f0826;height:56px;display:flex;align-items:center;justify-conte
 .hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:2.1rem;color:#0f0826;line-height:1.1;letter-spacing:-.02em;margin-bottom:.5rem;position:relative}
 .hero-sub{font-size:.78rem;color:rgba(255,255,255,.55);margin-bottom:1.1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;position:relative}
 .hero-sub .hs-sep{color:rgba(255,255,255,.2)}
-.hero h1 em{font-style:italic;color:#d4a853}
+.hero h1 em{font-style:italic;color:rgba(255,255,255,.85)}
 .hero-meta{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:1.4rem;position:relative}
 .hm-item{font-size:.72rem;color:rgba(255,255,255,.4);font-weight:500}
 .hero-stat-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:.85rem 0 1.2rem;position:relative}
@@ -834,9 +834,9 @@ document.getElementById('fb-city').addEventListener('change',function(){fbGo();}
     <span>✓ Verified Fort Worth data · BLS cost-of-living adjusted</span>
   </div>
   <div class="price-trio">
-    <div class="ptc"><div><div class="ptc-icon">💼</div><div class="ptc-label">Budget</div><div class="ptc-val" data-val="950">$950</div><div class="ptc-sub">Basic / entry level</div></div></div>
-    <div class="ptc ptc-avg"><div><div class="ptc-icon">👥</div><div class="ptc-label">Most Common</div><div class="ptc-val" data-val="2400">$2,400</div><div class="ptc-sub">Standard quality</div></div><span class="ptc-badge">Average</span></div>
-    <div class="ptc"><div><div class="ptc-icon">💎</div><div class="ptc-label">Premium</div><div class="ptc-val" data-val="5700">$5,700</div><div class="ptc-sub">High-end / complex</div></div></div>
+    <div class="ptc"><div><div class="ptc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="#7c3aed"><path d="M20 6h-2.18c.07-.44.18-.88.18-1a3 3 0 00-6 0c0 .12.11.56.18 1H10V4H6v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-8-1a1 1 0 011 1c0 .12-.11.56-.18 1h-1.64C11.11 6.56 11 6.12 11 6a1 1 0 011-1zm0 10l-4-2.22V9.31l4 2.22 4-2.22V12.8L12 15z"/></svg></div><div class="ptc-label">Budget</div><div class="ptc-val" data-val="950">$950</div><div class="ptc-sub">Basic / entry level</div></div></div>
+    <div class="ptc ptc-avg"><div><div class="ptc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="#7c3aed"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div><div class="ptc-label">Most Common</div><div class="ptc-val" data-val="2400">$2,400</div><div class="ptc-sub">Standard quality</div></div><span class="ptc-badge">Average</span></div>
+    <div class="ptc"><div><div class="ptc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div><div class="ptc-label">Premium</div><div class="ptc-val" data-val="5700">$5,700</div><div class="ptc-sub">High-end / complex</div></div></div>
   </div>
   <div class="psb-wrap rv">
   <div class="psb-title">Price Spectrum &mdash; Fort Worth vs National Average</div>
