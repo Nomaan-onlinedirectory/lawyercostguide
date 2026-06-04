@@ -107,15 +107,15 @@ SITES = {
         "tagline": "Real Legal Fees — By City & Practice Area",
         "desc": "Find real attorney fees for your city and legal matter. BLS-adjusted, verified firms, updated quarterly.",
         "accent": "#7c3aed",
-        "accent2": "#a78bfa",
-        "bg": "#f8f6fc",
-        "ink": "#1a1025",
-        "ink2": "#2d1f45",
-        "parch": "#ede9f8",
-        "bdr": "#c4b5e8",
-        "warm": "#ddd5f3",
-        "mid": "#4a3570",
-        "muted": "#7c6b9e",
+        "accent2": "#d4a853",
+        "bg": "#0f0826",
+        "ink": "#0f0826",
+        "ink2": "#1a1035",
+        "parch": "#1a1035",
+        "bdr": "#2d1f45",
+        "warm": "#2d1f45",
+        "mid": "#d4a853",
+        "muted": "#8b7fa8",
         "category": "legal",
         "category_label": "Legal Fees",
         "unit": "$",
@@ -1037,7 +1037,7 @@ nav{{background:{ink};height:56px;display:flex;align-items:center;justify-conten
 .ptc-avg{{background:rgba(255,255,255,.08)}}
 .ptc-label{{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.38);margin-bottom:.15rem}}
 .ptc-val{{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:#fff;line-height:1}}
-.ptc-avg .ptc-val{{color:{a2};font-size:1.85rem}}
+.ptc-avg .ptc-val{{color:#d4a853;font-size:1.85rem}}
 .ptc-sub{{font-size:.66rem;color:rgba(255,255,255,.3);margin-top:.1rem}}
 .ptc-badge{{background:{a};color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:.18rem .5rem;border-radius:5px;flex-shrink:0}}
 .ad-label{{font-size:.6rem;color:{muted};text-align:center;margin-bottom:.2rem;letter-spacing:.08em;text-transform:uppercase}}
@@ -1542,8 +1542,8 @@ def build_nav(s, depth=0):
     links = "".join(f'<a href="/{slug_map.get(l, l.lower().replace(" ","-"))}">{l}</a>' for l in s["nav_links"])
     drawer_links = "".join(f'<a href="/{slug_map.get(l, l.lower().replace(" ","-"))}">{l}</a>' for l in s["nav_links"])
     is_lcg = s.get("domain") == "lawyercostguide.com"
-    logo_img = '<img src="/logo.png" srcset="/logo.png 1x, /logo@2x.png 2x, /logo@3x.png 3x" alt="LawyerCostGuide" width="32" height="32" style="height:32px;width:32px;object-fit:contain;flex-shrink:0;" loading="eager">' if is_lcg else ""
-    logo_text = "<em>Lawyer</em>CostGuide" if is_lcg else f'<em>{s["name"][:len(s["name"])//2]}</em>{s["name"][len(s["name"])//2:]}'
+    logo_img = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;" aria-label="LawyerCostGuide"><rect width="32" height="32" rx="7" fill="#d4a853"/><text x="16" y="22" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#0f0826">VG</text></svg>' if is_lcg else ""
+    logo_text = '<span style="font-family:\'Playfair Display\',serif;font-size:14px;font-weight:500;color:#fff;"><span style="color:#d4a853;font-style:italic;">Lawyer</span>CostGuide</span>' if is_lcg else f'<em>{s["name"][:len(s["name"])//2]}</em>{s["name"][len(s["name"])//2:]}'
     return f"""<nav>
   <a class="logo" href="/">{logo_img}{logo_text}</a>
   <div class="nav-r">{links}<a href="/" class="nav-cta">{s["nav_cta"]}</a></div>
